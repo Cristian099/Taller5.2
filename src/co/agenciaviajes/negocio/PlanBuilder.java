@@ -12,6 +12,13 @@ public abstract class PlanBuilder {
     public void crearNuevoPlan() {
         plan = new Plan();
     }
+    public abstract void buildCliente();
+    public abstract void buildTransportes();
+    public abstract void buildAlojamiento();
+    public abstract void buildAlimentacion();
+    public abstract void buildSeguroHotelero();
+    public abstract void buildImpuestoTiquete();
+    public abstract void buildTours();
 
     // Completar métodos
 

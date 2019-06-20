@@ -5,6 +5,7 @@ import co.agenciaviajes.negocio.DirectorPlan;
 import co.agenciaviajes.negocio.PlanBuilder;
 import co.agenciaviajes.negocio.SanAndresBuilder;
 import co.agenciaviajes.negocio.Plan;
+import co.agenciaviajes.negocio.SantaMartaBuilder;
 
 /**
  *
@@ -28,6 +29,13 @@ public class ClienteMain {
 
         PlanBuilder cartagena = new CartagenaBuilder();
         director.setPlanBuilder(cartagena);
+        director.construirPlan();
+        plan = director.getPlan();
+        System.out.println("Plan:" + plan);
+        
+        
+        PlanBuilder santamarta = new SantaMartaBuilder();
+        director.setPlanBuilder(santamarta);
         director.construirPlan();
         plan = director.getPlan();
         System.out.println("Plan:" + plan);
